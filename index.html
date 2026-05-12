@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psiko AI - Yapay Zeka Psikolojik Destek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Psiko AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#sohbet">Sohbet</a></li>
+                <li><a href="#ruh-hali">Ruh Hali</a></li>
+                <li><a href="#egzersizler">Egzersizler</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline">Giriş Yap</button>
+                <button class="btn btn-primary">Ücretsiz Başla</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>HIPAA Uyumlu & Güvenli</span>
+                </div>
+                <h1>Zihniniz İçin<br><span class="gradient-text">Yapay Zeka Desteği</span></h1>
+                <p class="hero-description">
+                    7/24 erişilebilir, kişiselleştirilmiş psikolojik destek. CBT temelli sohbet, 
+                    ruh hali takibi ve terapötik egzersizlerle kendinizi keşfedin.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="scrollToChat()">
+                        <i class="fas fa-comments"></i>
+                        Şimdi Konuşmaya Başla
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        Nasıl Çalışır?
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Aktif Kullanıcı</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Kullanıcı Puanı</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Egzersiz</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chat-preview">
+                    <div class="chat-header">
+                        <div class="ai-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="ai-info">
+                            <span class="ai-name">Psiko AI</span>
+                            <span class="ai-status"><i class="fas fa-circle"></i> Çevrimiçi</span>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message ai-message">
+                            <p>Merhaba! Bugün kendinizi nasıl hissediyorsunuz? 🌱</p>
+                        </div>
+                        <div class="message user-message">
+                            <p>Biraz kaygılıyım, iş yerinde zorlanıyorum.</p>
+                        </div>
+                        <div class="message ai-message">
+                            <p>Anlıyorum. Kaygınızı azaltmak için birlikte nefes egzersizi yapalım mı? 🫁</p>
+                        </div>
+                    </div>
+                    <div class="chat-input-preview">
+                        <span>Mesajınızı yazın...</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Özellikler</span>
+                <h2>Kapsamlı Psikolojik Destek</h2>
+                <p>Yapay zeka destekli araçlarımızla zihinsel sağlığınızı güçlendirin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>AI Sohbet Desteği</h3>
+                    <p>CBT temelli 7/24 sohbet. Anksiyete, depresyon ve stres yönetimi için kişiselleştirilmiş destek.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Ruh Hali Takibi</h3>
+                    <p>Günlük duygu durumunuzu kaydedin, trendleri görün ve tetikleyicileri belirleyin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Terapötik Egzersizler</h3>
+                    <p>150+ nefes, mindfulness ve gevşeme egzersizi. Programlar halinde düzenlenmiş.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Psikoeğitim</h3>
+                    <p>Videolu kılavuzlar ve makaleler. "İlk seansta ne beklemeli" gibi içerikler.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Tam Gizlilik</h3>
+                    <p>HIPAA uyumlu, uçtan uca şifreleme. Verileriniz güvende ve asla paylaşılmaz.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>İnsan Terapist</h3>
+                    <p>İhtiyaç duyduğunuzda lisanslı terapistlere hızlı yönlendirme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Section -->
+    <section id="sohbet" class="chat-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">AI Sohbet</span>
+                <h2>Şimdi Konuşmaya Başlayın</h2>
+                <p>Kaygınızı azaltmak, ruh halinizi iyileştirmek ve kendinizi anlamak için AI destekli sohbet</p>
+            </div>
+            <div class="chat-container">
+                <div class="chat-sidebar">
+                    <div class="sidebar-header">
+                        <h3><i class="fas fa-history"></i> Sohbet Geçmişi</h3>
+                    </div>
+                    <div class="chat-history">
+                        <div class="history-item active">
+                            <i class="fas fa-comment"></i>
+                            <div class="history-info">
+                                <span class="history-title">Bugünkü Sohbet</span>
+                                <span class="history-time">Devam ediyor...</span>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <i class="fas fa-comment"></i>
+                            <div class="history-info">
+                                <span class="history-title">Kaygı Yönetimi</span>
+                                <span class="history-time">Dün</span>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <i class="fas fa-comment"></i>
+                            <div class="history-info">
+                                <span class="history-title">Uyku Sorunları</span>
+                                <span class="history-time">3 gün önce</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-footer">
+                        <button class="btn btn-outline btn-small">
+                            <i class="fas fa-plus"></i> Yeni Sohbet
+                        </button>
+                    </div>
+                </div>
+                <div class="chat-main">
+                    <div class="chat-header-main">
+                        <div class="ai-avatar-large">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="ai-header-info">
+                            <h3>Psiko AI</h3>
+                            <span class="status"><i class="fas fa-circle"></i> Çevrimiçi</span>
+                        </div>
+                        <div class="chat-actions">
+                            <button class="icon-btn" title="Sesli mesaj"><i class="fas fa-microphone"></i></button>
+                            <button class="icon-btn" title="Ayarlar"><i class="fas fa-cog"></i></button>
+                        </div>
+                    </div>
+                    <div class="chat-messages-main" id="chatMessages">
+                        <div class="message-bubble ai-bubble">
+                            <div class="bubble-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="bubble-content">
+                                <p>Merhaba! Ben Psiko AI, yapay zeka psikolojik destek asistanınız. 🌟</p>
+                                <p>Bugün kendinizi nasıl hissediyorsunuz? Herhangi bir konuda konuşmak isterseniz buradayım.</p>
+                                <span class="bubble-time">Şimdi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-replies">
+                        <button class="quick-btn" onclick="sendQuickMessage('Kaygılı hissediyorum')">😰 Kaygılıyım</button>
+                        <button class="quick-btn" onclick="sendQuickMessage('Stresliyim')">😤 Stresliyim</button>
+                        <button class="quick-btn" onclick="sendQuickMessage('Üzgünüm')">😢 Üzgünüm</button>
+                        <button class="quick-btn" onclick="sendQuickMessage('Sadece konuşmak istiyorum')">💬 Konuşmak istiyorum</button>
+                    </div>
+                    <div class="chat-input-area">
+                        <button class="icon-btn attachment-btn"><i class="fas fa-paperclip"></i></button>
+                        <input type="text" id="chatInput" placeholder="Mesajınızı yazın..." onkeypress="handleKeyPress(event)">
+                        <button class="icon-btn voice-btn"><i class="fas fa-microphone"></i></button>
+                        <button class="btn btn-primary send-btn" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Tracker Section -->
+    <section id="ruh-hali" class="mood-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ruh Hali Takibi</span>
+                <h2>Duygu Durumunuzu İzleyin</h2>
+                <p>Günlük ruh halinizi kaydedin, trendleri görün ve kendinizi daha iyi anlayın</p>
+            </div>
+            <div class="mood-container">
+                <div class="mood-input-card">
+                    <h3><i class="fas fa-smile"></i> Bugün Nasılsınız?</h3>
+                    <div class="mood-emojis">
+                        <button class="mood-emoji" data-mood="1" onclick="selectMood(1)">
+                            <span class="emoji">😢</span>
+                            <span class="mood-label">Çok Kötü</span>
+                        </button>
+                        <button class="mood-emoji" data-mood="2" onclick="selectMood(2)">
+                            <span class="emoji">😟</span>
+                            <span class="mood-label">Kötü</span>
+                        </button>
+                        <button class="mood-emoji" data-mood="3" onclick="selectMood(3)">
+                            <span class="emoji">😐</span>
+                            <span class="mood-label">Ortalama</span>
+                        </button>
+                        <button class="mood-emoji" data-mood="4" onclick="selectMood(4)">
+                            <span class="emoji">🙂</span>
+                            <span class="mood-label">İyi</span>
+                        </button>
+                        <button class="mood-emoji" data-mood="5" onclick="selectMood(5)">
+                            <span class="emoji">😄</span>
+                            <span class="mood-label">Çok İyi</span>
+                        </button>
+                    </div>
+                    <div class="mood-note">
+                        <textarea id="moodNote" placeholder="Bugün neler hissediyorsunuz? (Opsiyonel)"></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="saveMood()">
+                        <i class="fas fa-save"></i> Kaydet
+                    </button>
+                </div>
+                <div class="mood-stats-card">
+                    <h3><i class="fas fa-chart-area"></i> Haftalık Özet</h3>
+                    <div class="mood-chart" id="moodChart">
+                        <div class="chart-bar" style="height: 40%;" data-day="Pzt" data-value="2">
+                            <span class="bar-value">2</span>
+                        </div>
+                        <div class="chart-bar" style="height: 60%;" data-day="Sal" data-value="3">
+                            <span class="bar-value">3</span>
+                        </div>
+                        <div class="chart-bar" style="height: 80%;" data-day="Çar" data-value="4">
+                            <span class="bar-value">4</span>
+                        </div>
+                        <div class="chart-bar" style="height: 50%;" data-day="Per" data-value="3">
+                            <span class="bar-value">3</span>
+                        </div>
+                        <div class="chart-bar" style="height: 30%;" data-day="Cum" data-value="2">
+                            <span class="bar-value">2</span>
+                        </div>
+                        <div class="chart-bar" style="height: 70%;" data-day="Cmt" data-value="4">
+                            <span class="bar-value">4</span>
+                        </div>
+                        <div class="chart-bar active" style="height: 90%;" data-day="Paz" data-value="5">
+                            <span class="bar-value">5</span>
+                        </div>
+                    </div>
+                    <div class="mood-summary">
+                        <div class="summary-item">
+                            <span class="summary-label">Ortalama</span>
+                            <span class="summary-value">3.3</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">En İyi Gün</span>
+                            <span class="summary-value">Pazar</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Trend</span>
+                            <span class="summary-value positive"><i class="fas fa-arrow-up"></i> Yükseliş</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="egzersizler" class="exercises-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Egzersizler</span>
+                <h2>Terapötik Egzersiz Kütüphanesi</h2>
+                <p>150+ egzersiz arasından size en uygun olanı seçin</p>
+            </div>
+            <div class="exercise-categories">
+                <button class="category-btn active" onclick="filterExercises('all')">Tümü</button>
+                <button class="category-btn" onclick="filterExercises('nefes')">Nefes</button>
+                <button class="category-btn" onclick="filterExercises('mindfulness')">Mindfulness</button>
+                <button class="category-btn" onclick="filterExercises('uyku')">Uyku</button>
+                <button class="category-btn" onclick="filterExercises('anksiyete')">Anksiyete</button>
+                <button class="category-btn" onclick="filterExercises('depresyon')">Depresyon</button>
+            </div>
+            <div class="exercises-grid" id="exercisesGrid">
+                <div class="exercise-card" data-category="nefes">
+                    <div class="exercise-image">
+                        <i class="fas fa-wind"></i>
+                        <div class="exercise-duration">5 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>4-7-8 Nefes Tekniği</h4>
+                        <p>Anksiyeteyi azaltan, uykuyu kolaylaştıran nefes egzersizi.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 12K</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-category="mindfulness">
+                    <div class="exercise-image">
+                        <i class="fas fa-spa"></i>
+                        <div class="exercise-duration">10 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>Vücut Taraması</h4>
+                        <p>Tüm vücudunuzu farkındalıkla tarayarak gevşeme sağlayın.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 8.5K</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-category="uyku">
+                    <div class="exercise-image">
+                        <i class="fas fa-moon"></i>
+                        <div class="exercise-duration">15 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>Uyku Meditasyonu</h4>
+                        <p>Dinlendirici sesler ve rehberli meditasyonla derin uykuya dalın.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 15K</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-category="anksiyete">
+                    <div class="exercise-image">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <div class="exercise-duration">8 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>5-4-3-2-1 Tekniği</h4>
+                        <p>Panik anında gerçekliğe dönmek için duyu odaklı teknik.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 20K</span>
+                            <span><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-category="depresyon">
+                    <div class="exercise-image">
+                        <i class="fas fa-sun"></i>
+                        <div class="exercise-duration">7 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>Minnettarlık Günlüğü</h4>
+                        <p>Pozitif düşünce kalıplarını geliştirmek için günlük egzersiz.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 10K</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-category="nefes">
+                    <div class="exercise-image">
+                        <i class="fas fa-lungs"></i>
+                        <div class="exercise-duration">3 dk</div>
+                    </div>
+                    <div class="exercise-content">
+                        <h4>Kutu Nefes Alma</h4>
+                        <p>Odaklanmayı artıran, stresi azaltan basit nefes tekniği.</p>
+                        <div class="exercise-meta">
+                            <span><i class="fas fa-heart"></i> 18K</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <button class="btn btn-primary btn-small">Başla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Programlar</span>
+                <h2>Yapılandırılmış Programlar</h2>
+                <p>Belirli hedefler için tasarlanmış haftalık programlar</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-badge">4 Hafta</div>
+                    <div class="program-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Anksiyete Yönetimi</h3>
+                    <p>Kaygıyı anlamak, tetikleyicileri belirlemek ve sağlıklı başa çıkma mekanizmaları geliştirmek.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Günlük egzersizler</li>
+                        <li><i class="fas fa-check"></i> CBT teknikleri</li>
+                        <li><i class="fas fa-check"></i> Ruh hali takibi</li>
+                    </ul>
+                    <button class="btn btn-primary">Programa Başla</button>
+                </div>
+                <div class="program-card featured">
+                    <div class="program-badge">6 Hafta</div>
+                    <div class="program-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Uyku İyileştirme</h3>
+                    <p>Kaliteli uyku alışkanlıkları edinmek ve uykusuzlukla başa çıkmak için kapsamlı program.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Uyku hijyeni</li>
+                        <li><i class="fas fa-check"></i> Gevşeme teknikleri</li>
+                        <li><i class="fas fa-check"></i> Uyku günlüğü</li>
+                    </ul>
+                    <button class="btn btn-primary">Programa Başla</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-badge">8 Hafta</div>
+                    <div class="program-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Özgüven Geliştirme</h3>
+                    <p>Kendinizi daha iyi hissetmek, olumlu benlik algısı oluşturmak için adım adım rehber.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Affirmasyonlar</li>
+                        <li><i class="fas fa-check"></i> Başarı günlüğü</li>
+                        <li><i class="fas fa-check"></i> Zorlayıcı düşünceler</li>
+                    </ul>
+                    <button class="btn btn-primary">Programa Başla</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-content">
+                    <h3>Kriz Anında Yardım</h3>
+                    <p>Eğer kendinize veya başkasına zarar verme düşünceleriniz varsa, lütfen hemen yardım alın. AI desteği acil durumlar için yeterli olmayabilir.</p>
+                    <div class="emergency-buttons">
+                        <a href="tel:112" class="btn btn-emergency">
+                            <i class="fas fa-phone"></i> 112 - Acil Çağrı
+                        </a>
+                        <a href="tel:183" class="btn btn-emergency-outline">
+                            <i class="fas fa-heart"></i> 183 - Psikolojik Destek
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2>Güvenilir ve Bilimsel Temelli</h2>
+                    <p>Psiko AI, lisanslı psikologlar ve yapay zeka uzmanları tarafından geliştirilmiştir. CBT, DBT ve mindfulness temelli yaklaşımlarımız bilimsel olarak kanıtlanmıştır.</p>
+                    <div class="about-features">
+                        <div class="about-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>HIPAA Uyumlu Güvenlik</span>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>256-bit Uçtan Uca Şifreleme</span>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lisanslı Terapist Denetimi</span>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>%100 Anonim ve Gizli</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Aktif Kullanıcı</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Sohbet Seansı</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Ortalama Puan</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Memnuniyet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <span>Psiko AI</span>
+                    </div>
+                    <p>Yapay zeka destekli psikolojik destek platformu. 7/24 yanınızdayız.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#sohbet">AI Sohbet</a></li>
+                        <li><a href="#ruh-hali">Ruh Hali Takibi</a></li>
+                        <li><a href="#egzersizler">Egzersizler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kaynaklar</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> destek@psikoai.com</li>
+                        <li><i class="fas fa-phone"></i> 0850 123 45 67</li>
+                        <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> Psiko AI. Tüm hakları saklıdır. | Bu platform tıbbi teşhis koymaz, profesyonel yardımın yerini tutmaz.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Crisis Modal -->
+    <div class="modal" id="crisisModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-exclamation-circle"></i>
+                <h3>Önemli Uyarı</h3>
+            </div>
+            <div class="modal-body">
+                <p>Kendinize zarar verme veya intihar düşünceleriniz olduğunu belirttiniz. Lütfen hemen yardım alın:</p>
+                <div class="crisis-contacts">
+                    <a href="tel:112" class="crisis-btn">
+                        <i class="fas fa-ambulance"></i>
+                        <span>112 - Acil Çağrı</span>
+                    </a>
+                    <a href="tel:183" class="crisis-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>183 - Psikolojik Destek</span>
+                    </a>
+                </div>
+                <p class="crisis-note">Siz değerlisiniz ve yardım almayı hak ediyorsunuz.</p>
+            </div>
+            <button class="btn btn-outline" onclick="closeCrisisModal()">Anladım</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
